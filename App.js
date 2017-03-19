@@ -5,7 +5,9 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.timer}>25.00</Text>
+        <Text style={styles.timer}>
+            <Text>25</Text>.<Text style={styles.timerSeconds}>00</Text>
+        </Text>
       </View>
     );
   }
@@ -20,6 +22,11 @@ const styles = StyleSheet.create({
   },
   timer: {
     color: '#FFF',
-    fontSize: 70
+    fontSize: 70,
+    fontFamily: 'sans-serif-light',
+    fontWeight: '300',
+  },
+  timerSeconds: {
+    fontSize: 50,
   },
 });
