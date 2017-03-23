@@ -1,22 +1,29 @@
 {
-  "name": "do-pomodoro",
-  "version": "0.1.0",
-  "private": true,
-  "devDependencies": {
-    "jest-expo": "^0.2.1",
-    "react-test-renderer": "~15.4.0"
-  },
-  "scripts": {
-    "start": "react-native start",
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "test": "node node_modules/jest/bin/jest.js --watch"
-  },
-  "jest": {
-    "preset": "jest-expo"
-  },
-  "dependencies": {
-    "react": "~15.4.0",
-    "react-native": "0.41.2"
-  }
+    "name": "do-pomodoro",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "jest-expo": "^0.2.1",
+        "react-test-renderer": "~15.4.0"
+    },
+    "scripts": {
+        "start": "react-native start",
+        "android": "react-native run-android",
+        "ios": "react-native run-ios",
+        "test": "node node_modules/jest/bin/jest.js --watch"
+    },
+    "jest": {
+        "preset": "jest-expo"
+    },
+    "dependencies": {
+        "react": "~15.4.0",
+        "react-native": "0.41.2",
+        "react-navigation": "^1.0.0-beta.7",
+        "redux": "^3.6.0"
+    },
+    "rnpm": {
+        "assets": [
+            "./assets/fonts"
+        ]
+    }
 }
