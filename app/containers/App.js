@@ -1,9 +1,11 @@
+import Reactotron from 'reactotron-react-native';
 import { StackNavigator } from 'react-navigation';
+import HomeScreen from '../components/HomeScreen';
+import Timer from '../components/Timer';
 
-import HomeScreen from './components/HomeScreen';
-import Timer from './components/Timer';
 
-const Router = StackNavigator(
+
+export default Router = StackNavigator(
     {
         Home: { screen: HomeScreen },
         Timer: { screen: Timer },
@@ -18,5 +20,3 @@ const Router = StackNavigator(
         }
     }
 )
-
-export default Router;

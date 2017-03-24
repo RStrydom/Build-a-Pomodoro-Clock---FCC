@@ -1,3 +1,4 @@
+import Reactotron from 'reactotron-react-native';
 import React from 'react';
 import { StyleSheet, Text, View, StatusBar, TouchableWithoutFeedback } from 'react-native';
 
@@ -7,6 +8,7 @@ export default class App extends React.Component {
     };
 
     render() {
+        // Reactotron.log(this.props)
         const { navigate } = this.props.navigation;
         return (
             <TouchableWithoutFeedback onPress={() => navigate('Timer')}>
